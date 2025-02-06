@@ -1,8 +1,14 @@
 
 
+getData(myURL).then( data201 => {
+    let myDate = data201.data.birthdate;
 
+    let myP = document.createElement("time");
+    myP.textContent = myDate;
+    
+    mySection.append(myP);
 
-
+});
 
 
 
